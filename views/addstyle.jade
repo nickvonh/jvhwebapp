@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    h1= title
+    form#formAddStyle(name="addStyle",method="post",action="/addStyle")
+        div.section#first
+            input#inputStyleNo(type="text", placeholder="Style No", name="style")
+            input#inputStyleSizes(type="text", placeholder="Sizes", name="sizes")
+            input#inputStyleColors(type="text", placeholder="Colors", name="colors")
+            input#inputStyleContent(type="text", placeholder="Content", name="content")
+            input#inputStyleDesc(type="text", placeholder="Description", name="desc")
+            input#inputStylePrice(type="number", pattern="\d*", placeholder="Price", name="price")
+        button#styleSubmit(type="submit") submit

@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  each style in styles
+    h1.style= style.style
+    h3.sizes= style.sizes
+    h3.colors= style.colors
+    h3.content= style.content
+    h3.desc= style.desc
+    h3.price= style.price

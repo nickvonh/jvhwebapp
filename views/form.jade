@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    h1= title
+    form#formAdditem(name="additem",method="post",action="/additem")
+        div.section#first
+            input#inputItemCustomer(type="text", placeholder="Customer", name="customer")
+            input#inputItemTel(type="number", pattern="\d*", placeholder="Tel", name="tel")
+            input#inputItemEmail(type="text", placeholder="Email", name="email")
+            div.items
+                input#inputItemStyle(type="mixed", placeholder="Style No:", name="style")
+                input#inputItemColor(type="text", placeholder="Color", name="color")
+                input#inputItemQty(type="number", pattern="\d*", placeholder="Qty", name="qty")
+                div#addItem add item
+                ul#inputItem
+        div#itemSubmit submit

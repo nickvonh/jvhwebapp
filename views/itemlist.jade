@@ -1,0 +1,38 @@
+extends layout
+
+block content
+	h1.
+		Item List
+	div.container
+		ul
+			each item, i in itemlist
+				li
+					p #{item.number}
+		ul
+			each item, i in itemlist
+				li
+					p #{item.cost}
+		ul
+			each item, i in itemlist
+				li
+					p #{item.location}
+		ul
+			each item, i in itemlist
+				li
+					p #{item.brand}
+		ul
+			each item, i in itemlist
+				li
+					p #{item.model}
+		ul
+			each item, i in itemlist
+				li
+					p #{item.description}
+		ul
+			each item, i in itemlist
+				li
+					p #{item.condition}
+		ul
+			each item, i in itemlist
+				li
+					p #{item.condition2}
