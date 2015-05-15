@@ -8,18 +8,18 @@ var nodemailer = require('nodemailer');
 
 //create email transport object
 var transporter = nodemailer.createTransport({
-   service: 'Gmail',
+   service: '',
     auth:{
-     user: 'nickvonh@gmail.com',
-     pass: 'need a new password'
+     user: '',
+     pass: ''
     }
 });
 
 // DataBase setup
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
-var Item = require('/blueSteel/models/item.js');
-mongoose.connect('localhost:27017/itemcollection');
+var Item = require('/models/item.js');
+mongoose.connect('');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
