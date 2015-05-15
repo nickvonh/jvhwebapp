@@ -52,10 +52,10 @@ router.post('/addstyle', function(req, res){
 router.post('/additem', function(req, res) {
     var nodemailer = require('nodemailer');
     var transporter = nodemailer.createTransport({
-    service: 'Gmail',
+    service: '',
     auth: {
-        user: 'envy626@gmail.com',
-        pass: '3nvyme62'
+        user: '',
+        pass: ''
         }
     });
     
@@ -72,8 +72,8 @@ router.post('/additem', function(req, res) {
     
     // setup e-mail data with unicode symbols
     var mailOptions = {
-        from: 'Nick v  <nickvonh@gmail.com>', // sender address
-        to: 'envy626@gmail.com,' + item.email, // list of receivers
+        from: '', // sender address
+        to: ',' + item.email, // list of receivers
         subject: 'Test ', // Subject line
         text: 'Your order has been confirmed' + order, // plaintext body
         html: "<style> h3{display:inline}</style><ul style='list-style:none;margin:0px 10px;'>" + html + "</ul>" //html text
